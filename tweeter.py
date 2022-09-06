@@ -18,6 +18,8 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 
+new_status = api.update_status("Ohayo!")
+
 public_tweets = api.home_timeline()
 
 header = ["USERNAME", "TWEET", "TIME"]
